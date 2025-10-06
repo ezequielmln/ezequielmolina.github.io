@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1 class="contacto">Contacto</h1>
+    <nav>
+        <li><a href="index.html">Inicio</a></li>
+    </nav>
+    <form action="#" method="post"></form>
+
+<!--Nombre-->
+    <label for="name">Nombre (requerido):</label>
+    <input type="text" id="name" name="user_name" maxlength="20">
+
+<!--Apellido-->
+    <label for="lastname">Apellido:</label>
+    <input type="text" id="lastname" name="user_lastname" maxlength="20">
+
+<!--Email-->
+    <label for="mail">Email (requerido):</label>
+    <input type="email" id="email" name="user_email">
+
+<!--Teléfono-->
+    <label for="telephone">Teléfono:</label>
+    <input type="tel" id="telephone" name="user_telephone">
+
+<!--Edad-->
+    <label for="age">Edad:</label>
+    <input type="number" id="age" name="user_age" min="16" max="120">
+
+<!--Dirección-->
+    <label for="address">Dirección:</label>
+    <input type="text" id="address" name="user_address">
+
+<!--Elección de provincia-->
+    <label for="provincia">Provincia:</label>
+    <input type="text" id="provincia" name="user_province" list="provincias-patagonicas" placeholder="Escriba su provincia" required>
+    <datalist id="provincias-patagonicas">
+        <option value="Río Negro"></option>
+        <option value="Chubut"></option>
+        <option value="Santa Cruz"></option>
+        <option value="Tierra del Fuego"></option>
+        <option value="Neuquén"></option>
+    </datalist>
+
+<!--Código postal-->
+    <label for="codigo">Código Postal:</label>
+    <input type="text" id="cp" name="codigo_postal" placeholder="Ej: A1234ABC" pattern="[A-Za-z]\d{4}[A-Za-z]{3}" maxlength="8" required >
+
+<!--Preferencia contacto-->
+    <p>¿Qué forma de contacto prefiere?</p>
+    <label>
+    <input type="radio" name="correo_electronico" checked>Correo Electrónico
+    </label>
+    <label>
+    <input type="radio" name="correo_postal">Correo Postal
+    </label>
+    <label>
+    <input type="radio" name="correo_electronico">Telefóno
+    </label>
+
+<!--Elección tipo de subscripción-->
+    <p>Tipo de subscripción:</p>
+    <label>
+    <input type="checkbox" name="noticias">Noticias
+    </label>
+    <label>
+    <input type="checkbox" name="promociones">Promociones
+    </label>
+    <label>
+    <input type="checkbox" name="alertas">Alertas
+    </label>
+    <label>
+    <input type="checkbox" name="eventos">Eventos
+    </label>
+
+    <button class="botonCargar">Cargar</button>
+
+    <table border="1" cellspacing="2">
+        <thead>
+            <tr>
+                <th>Campo</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tr>
+            <th>Nombre</th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>Apellido</th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>Edad</th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>Provincia</th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>Provincia</th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>Código Postal</th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>Contacto</th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>Subscripción</th>
+            <th></th>
+        </tr>
+
+    </table>
+</body>
+</html>
