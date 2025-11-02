@@ -9,34 +9,36 @@
 <body>
     <h1 class="contacto">Contacto</h1>
     <nav>
+        <ul>
         <li><a href="index.html">Inicio</a></li>
+        </ul>
     </nav>
 
-    <form action="#" method="post"></form>
+    <form action="#" method="post">
 
 <!--Nombre-->
-    <label for="name">Nombre (requerido):</label>
-    <input type="text" id="name" name="user_name" maxlength="20">
+     <label for="name">Nombre (requerido):</label>
+     <input type="text" id="name" name="user_name" maxlength="20" required>
 
 <!--Apellido-->
-    <label for="lastname">Apellido:</label>
-    <input type="text" id="lastname" name="user_lastname" maxlength="20">
+        <label for="lastname">Apellido:</label>
+        <input type="text" id="lastname" name="user_lastname" maxlength="20">
 
 <!--Email-->
-    <label for="mail">Email (requerido):</label>
-    <input type="email" id="email" name="user_email">
+     <label for="email">Email (requerido):</label>
+        <input type="email" id="email" name="user_email" required>
 
 <!--Teléfono-->
-    <label for="telephone">Teléfono:</label>
-    <input type="tel" id="telephone" name="user_telephone">
+     <label for="telephone">Teléfono:</label>
+        <input type="tel" id="telephone" name="user_telephone">
 
 <!--Edad-->
-    <label for="age">Edad:</label>
-    <input type="number" id="age" name="user_age" min="16" max="120">
+      <label for="age">Edad:</label>
+     <input type="number" id="age" name="user_age" min="16" max="120">
 
 <!--Dirección-->
-    <label for="address">Dirección:</label>
-    <input type="text" id="address" name="user_address">
+      <label for="address">Dirección:</label>
+      <input type="text" id="address" name="user_address">
 
 <!--Elección de provincia-->
     <label for="provincia">Provincia:</label>
@@ -50,37 +52,41 @@
     </datalist>
 
 <!--Código postal-->
-    <label for="codigo">Código Postal:</label>
+    <label for="cp">Código Postal:</label>
     <input type="text" id="cp" name="codigo_postal" placeholder="Ej: A1234ABC" pattern="[A-Za-z]\d{4}[A-Za-z]{3}" maxlength="8" required >
 
 <!--Preferencia contacto-->
+<div class="grupo-contacto">
     <p>¿Qué forma de contacto prefiere?</p>
     <label>
-    <input type="radio" name="correo_electronico" checked>Correo Electrónico
+    <input type="radio" name="pref_contacto" value="email">Correo Electrónico
     </label>
     <label>
-    <input type="radio" name="correo_postal">Correo Postal
+    <input type="radio" name="pref_contacto" value="postal">Correo Postal
     </label>
     <label>
-    <input type="radio" name="correo_electronico">Telefóno
+    <input type="radio" name="pref_contacto" value="telefono">Telefóno
     </label>
+</div>
+<!--Elección tipo de suscripción-->
+<div class="grupo-suscripcion">
+    <p>Tipo de suscripción:</p>
+    <label>
+    <input type="checkbox" name="subscripcion" value="noticias">Noticias
+    </label>
+    <label>
+    <input type="checkbox" name="subscripcion" value="promociones">Promociones
+    </label>
+    <label>
+    <input type="checkbox" name="subscripcion" value="alertas" checked>Alertas
+    </label>
+    <label>
+    <input type="checkbox" name="subscripcion" value="eventos">Eventos
+    </label>
+</div>
+    <button class="botonCargar" type="submit">Cargar</button>
+    </form>
 
-<!--Elección tipo de subscripción-->
-    <p>Tipo de subscripción:</p>
-    <label>
-    <input type="checkbox" name="noticias">Noticias
-    </label>
-    <label>
-    <input type="checkbox" name="promociones">Promociones
-    </label>
-    <label>
-    <input type="checkbox" name="alertas">Alertas
-    </label>
-    <label>
-    <input type="checkbox" name="eventos">Eventos
-    </label>
-
-    <button class="botonCargar">Cargar</button>
 
     <table border="1" cellspacing="2">
         <thead>
@@ -89,43 +95,44 @@
                 <th>Valor</th>
             </tr>
         </thead>
+        <tbody>
         <tr>
-            <th>Nombre</th>
-            <th></th>
+            <td>Nombre</td>
+            <td></td>
         </tr>
         <tr>
-            <th>Apellido</th>
-            <th></th>
+            <td>Apellido</td>
+            <td></td>
         </tr>
         <tr>
-            <th>Email</th>
-            <th></th>
+            <td>Email</td>
+            <td></td>
         </tr>
         <tr>
-            <th>Edad</th>
-            <th></th>
+            <td>Edad</td>
+            <td></td>
         </tr>
         <tr>
-            <th>Provincia</th>
-            <th></th>
+            <td>Provincia</td>
+            <td></td>
         </tr>
         <tr>
-            <th>Provincia</th>
-            <th></th>
+            <td>Telefono</td>
+            <td></td>
         </tr>
         <tr>
-            <th>Código Postal</th>
-            <th></th>
+            <td>Código Postal</td>
+            <td></td>
         </tr>
         <tr>
-            <th>Contacto</th>
-            <th></th>
+            <td>Contacto</td>
+            <td></td>
         </tr>
         <tr>
-            <th>Subscripción</th>
-            <th></th>
+            <td>Subscripción</td>
+            <td></td>
         </tr>
-
+        </tbody>
     </table>
 </body>
 </html>
