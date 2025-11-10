@@ -176,12 +176,12 @@ th, td {
 
 /* Animación del Logo*/
 
-@keyframes giroLogo {
+@keyframes giroLogo{
   0% { transform: rotateY(0deg); }
   100% { transform: rotateY(360deg); }
 }
 
-.logo {
+.logo{
   width: 80px;
   height: auto;
   animation: giroLogo 2s ease-in-out;
@@ -218,4 +218,11 @@ th, td {
 
 .flecha-arriba:hover {
   background-color: #ddd;
+}
+
+#cv {
+    display:none;
+}
+.mostrar {
+  display: block;
 }
