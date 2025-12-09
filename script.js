@@ -1,4 +1,4 @@
-// Formulario 
+// LAB 5 - Formulario 
 
 const nombre = document.getElementById("name");
 const apellido = document.getElementById("lastname");

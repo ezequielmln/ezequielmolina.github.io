@@ -100,6 +100,8 @@ header{
     padding:20px
 }
 
+/*Formulario*/
+
 form {
     max-width: 600px;
     margin: 50px auto;
@@ -225,4 +227,147 @@ th, td {
 }
 .mostrar {
   display: block;
+}
+
+/*Juego*/
+
+.mainJuego {
+    background-color: rgb(56, 56, 56);
+    margin: 20px;
+    margin-top: 200px;
+    padding: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.juego-contenedor {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.instrucciones {
+    background-color: #3a3a3a;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 250px;
+}
+
+.instrucciones p {
+    margin: 10px 0;
+    padding-left: 0;
+}
+
+.panel-juego {
+    background-color: #414141;
+    padding: 20px;
+    flex: 2;
+    min-width: 300px;
+}
+
+.mensaje {
+    background-color: #252525;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mensaje.exito {
+    background-color: #2e7d32;
+    color: white;
+}
+
+.mensaje.error {
+    background-color: #c62828;
+    color: white;
+}
+
+.mensaje.pista {
+    background-color: #1565c0;
+    color: white;
+}
+
+.contador {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+.contador span {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.entrada {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+#numero {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 1.1em;
+    min-width: 150px;
+}
+
+#adivinar, #reiniciar {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#adivinar {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#adivinar:hover {
+    background-color: #45a049;
+}
+
+#reiniciar {
+    background-color: #2196F3;
+    color: white;
+}
+
+#reiniciar:hover {
+    background-color: #1976D2;
+}
+
+.historial h3 {
+    margin-top: 0;
+}
+
+.lista-intentos {
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #252525;
+    padding: 10px;
+}
+
+.intento {
+    padding: 8px;
+    margin: 5px 0;
+    border-left: 4px solid #666;
+    background-color: #2e2e2e;
+}
+
+.intento.acierto {
+    background-color: #1b5e20;
+}
+
+.intento.error {
+    background-color: #b71c1c;
 }
